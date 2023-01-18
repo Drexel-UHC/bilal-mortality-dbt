@@ -1,3 +1,6 @@
-
-R/extract-load/raw-data/ 
-.Rproj.user
+R/extract-load/raw-data
+R/extract-load/.Rproj.user/
+target/
+dbt_packages/
+logs/
+*.duckdb
