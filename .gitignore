@@ -3,5 +3,6 @@ R/extract-load/.Rproj.user/
 target/
 dbt_packages/
 logs/
+external/dev/
 *.duckdb
 .Rproj.user
