@@ -2,6 +2,7 @@
 {
   library(tidyverse)
   library(arrow)
+  
 }
 
 
@@ -9,7 +10,11 @@
 {
   file = "\\\\files.drexel.edu\\colleges\\SOPH\\Shared\\UHC\\Projects\\Bilal_DP5\\dbt\\mortality\\source\\mort2020.parquet"
   db = open_dataset(file)
-  dfa = db %>% 
+  ## source 
+  
+  
+  ## stage
+  df1 = db %>% 
     select(age_5yr_group,
            male,
            hispanic,
@@ -20,6 +25,10 @@
            icd10_t2_red,
            icd10_t3_red) %>% 
     collect()
+  
+  ## int
+  df1
+  
   }
 
 
