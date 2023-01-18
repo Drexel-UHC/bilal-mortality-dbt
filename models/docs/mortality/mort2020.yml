@@ -1,0 +1,13 @@
+version: 2
+sources:
+- name: Mortality
+  tags:
+  - rdata
+  - mortality
+  description: 'These are rdata from Usama'
+  meta:
+    external_location: \\files.drexel.edu\colleges\SOPH\Shared\UHC\Projects\Bilal_DP5\dbt\mortality\source\{name}.parquet
+  tables:
+  - name: mort2020
+    description: The 2020 mort rdata file
+   
