@@ -1,0 +1,27 @@
+bilal_mortality:
+  outputs:
+    dev:
+      type: duckdb
+      path: bilal-mortality-dev.duckdb
+      schema: csv
+      extensions:
+        - httpfs
+        - parquet
+      external_root: 'C:\Users\rl627\Desktop\Git\bilal-mortality-dbt\external\dev\'
+    stage:
+      type: duckdb
+      path: bilal-mortality-stg.duckdb
+      schema: csv
+      extensions:
+        - httpfs
+        - parquet
+      external_root: '\\files.drexel.edu\colleges\SOPH\Shared\UHC\Projects\Bilal_DP5\dbt\mortality\stage\'
+    prod:
+      type: duckdb
+      path: bilal-mortality-prod.duckdb
+      schema: parquet
+      extensions:
+        - httpfs
+        - parquet
+      external_root: '\\files.drexel.edu\colleges\SOPH\Shared\UHC\Projects\Bilal_DP5\dbt\mortality\models\'
+  target: dev
