@@ -1,0 +1,24 @@
+version: 2
+sources:
+- name: Exposure
+  tags:
+  - census
+  - income
+  description: 'This table contains ACS data'
+  meta:
+    external_location: \\files.drexel.edu\colleges\SOPH\Shared\UHC\Projects\Bilal_DP5\dbt\mortality\source\{name}.parquet
+  tables:
+  - name: census_example_income
+    description: '{{ doc("census_example_income_description") }}'
+    columns:
+    - name: fips
+      type: string
+      description: 'The FIPS code for the county'
+    - name: medincome 
+      type: int
+      description: 'The median income for the county'
+    - name: year
+      type: int
+      description: 'The year of the data'
+    
+   
