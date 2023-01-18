@@ -14,4 +14,4 @@ final as (
     )
 )
 
-select * from final EXCEPT death_year
+select * from final

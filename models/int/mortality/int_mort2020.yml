@@ -1,0 +1,11 @@
+version: 2
+models:
+- name: int_mort2020
+  description: 'Merged some income data into mort2020'
+  docs:
+    node_color: '#829356'
+  config:
+    tags:
+    - Mortality
+    - Income
+    - Intermediate
