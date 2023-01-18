@@ -6,6 +6,8 @@ SELECT
   race,
   res_fips,
   res_cbsa,
+  death_month,
+  death_year,
   icd10_t1_red,
   icd10_t2_red,
   icd10_t3_red,

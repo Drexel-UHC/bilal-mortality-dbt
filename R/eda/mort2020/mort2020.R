@@ -15,21 +15,26 @@
   
   ## stage
   df1 = db %>% 
-    select(age_5yr_group,
-           male,
-           hispanic,
-           race,
-           res_fips,
-           res_cbsa,
-           icd10_t1_red,
-           icd10_t2_red,
-           icd10_t3_red) %>% 
+    select(
+      ## demographics
+      age_5yr_group,
+      male,
+      hispanic,
+      race,
+      res_fips,
+      res_cbsa,
+      ## death info
+      death_month,
+      death_year,
+      icd10_t1_red,
+      icd10_t2_red,
+      icd10_t3_red) %>% 
     collect()
   
   ## int
   df1
   
-  }
+}
 
 
 

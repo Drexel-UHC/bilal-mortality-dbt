@@ -1,0 +1,10 @@
+version: 2
+models:
+- name: stg_mort2020
+  description: 'A subset of the mort2020 source table. We just include some basic demographics and death information.'
+  docs:
+    node_color: '#829356'
+  config:
+    tags:
+    - Mortality
+    - Stage

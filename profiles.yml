@@ -7,7 +7,7 @@ bilal_mortality:
       extensions:
         - httpfs
         - parquet
-      external_root: 'C:\Users\rl627\Desktop\Git\bilal-mortality-dbt\external\dev\'
+      external_root: 'D:\git\bilal-mortality-dbt\external\dev'
     stage:
       type: duckdb
       path: bilal-mortality-stg.duckdb
